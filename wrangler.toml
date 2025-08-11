@@ -1,0 +1,15 @@
+# The name of Worker project.
+name = "my-worker"
+main = "src/js/main.js"
+
+# The compatibility date determines the Workers runtime features available.
+compatibility_date = "2025-08-05"
+
+# Cloudflare Account ID. 
+account_id = "ACCOUNT_ID"
+
+# The `route` section registers the Worker to a specific URL pattern.
+# This tells Cloudflare to execute the Worker for requests to this URL.
+[[routes]]
+pattern = "www.mysite.com/*"
+zone_id = "ZONE_ID"
